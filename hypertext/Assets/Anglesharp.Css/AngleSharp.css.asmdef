@@ -1,0 +1,14 @@
+{
+    "name": "AngleSharp.css",
+    "references": [
+        "GUID:9a8b2289f80f9e742873cb473fd67afa"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

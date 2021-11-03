@@ -1,0 +1,17 @@
+{
+    "name": "WidgetFromHtml.Core",
+    "references": [
+        "GUID:9a8b2289f80f9e742873cb473fd67afa",
+        "GUID:f149de87a79fa474a856fd7c19df0bc3",
+        "GUID:5acfb3d610806475694a55239c7c23f0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

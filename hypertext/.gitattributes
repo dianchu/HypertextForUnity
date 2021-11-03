@@ -1,0 +1,24 @@
+# 设置默认用lf结尾
+* text=auto
+
+# 告诉git那些扩展名的文件用默认的行尾
+*.cs text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.asset text eol=lf
+*.prefab text eol=lf
+*.mat text eol=lf
+*.shader text eol=lf
+*.meta text eol=lf
+*.controller text eol=lf
+
+
+# 配置二进制文件的扩展名, 这样git不会尝试去修改它
+*.png binary
+*.jpg binary
+*.dll binary
+*.m binary
+*.fbx binary
+*.otf binary
+*.bnk binary
+*.wem binary

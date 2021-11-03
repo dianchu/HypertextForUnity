@@ -1,0 +1,17 @@
+{
+    "name": "WidgetFromHtml.Demo",
+    "references": [
+        "GUID:498a8dc295b601e418c841ac30d7d885",
+        "GUID:5acfb3d610806475694a55239c7c23f0",
+        "GUID:9a8b2289f80f9e742873cb473fd67afa"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
