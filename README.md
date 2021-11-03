@@ -1,6 +1,6 @@
 # HypertextForUnity
 
-基于Unity UIWidgets的超文本组件，可用于游戏UI中邮件，公共和聊天
+基于Unity UIWidgets的超文本组件，可用于游戏UI中邮件，公告和聊天
 
 # 简介
 
@@ -41,8 +41,8 @@
   - 告知外部布局信息(比如方便聊天ListView的布局和ChatMsgItem的布局)
   - 品质(比如控制gif,序列帧是否进行刷新,在一些低端机上,动图就不需要动了--!)
   - 设置html模板中的属性.
-  - 提供生命周期函数,编译组件封装.
+  - 提供生命周期函数,便于组件封装.
 - css样式(仅id选择器)
-  - 缓存,避免重复解析
+  - 缓存css样式,避免重复解析
 - html template
   - 使用html模板, 节省html重复解析的消耗
