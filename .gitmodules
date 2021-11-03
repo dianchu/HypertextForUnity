@@ -1,0 +1,3 @@
+[submodule "hypertext/Packages/com.unity.uiwidgets"]
+	path = hypertext/Packages/com.unity.uiwidgets
+	url = ../../Unity-Technologies/com.unity.uiwidgets.git
