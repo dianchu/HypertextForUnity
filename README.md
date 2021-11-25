@@ -7,22 +7,22 @@
 - html->widgets的映射抽象方法是从 [flutter_widget_from_html]() 0.6.1+4版本 移植而来
 - 这是一个基于[UIWidgets2.0](https://github.com/Unity-Technologies/com.unity.uiwidgets)(flutter)和[AngleSharp](https://github.com/AngleSharp/AngleSharp)的富文本插件
 - 使用html描述富文本内容,主要用于图文混排
-- 渲染目标是一张RenderTexture
+
+  
 
 # 优劣势
 
-​	**优势:**
+**优势:**
 
-1. 使用RT实现了类似光栅化缓存的效果. 当界面不动时, rt作为一张普通的纹理进行渲染.可以有效减少drawCall 和SetPassCall
+1. 用Html+样式表让用户非常方便完成图文混排的样式
+2. 光栅化缓存. 当界面不动时, 只有一张纹理需要渲染. 如果内容中有动图，可以把不变的部分做光栅化缓存，获得“动静分离”的优化效果
+3. 基于采用flutter的抽象和Skia引擎
 
-2. uiwidget2.0也实现了局部的光栅化缓存
+**劣势:**
 
-   **劣势:**
-
-   1. rt对内存的占用
-   2. AngleSharp+UIWidgets2.0(+引擎代码), 3个库的代码量还是非常大的.
-   3. 项目结构复杂,当原生层代码出现问题需要调整时,uiwidgets的构建工具链可能会产生一些麻烦,官方提供的bee似乎还依赖了unity内部员工vpn.
-   4. overDraw上升?
+1. 需要了解较多的技术细节，AngleSharp+UIWidgets2.0+Skia引擎, 3个库的代码量还是非常大的.
+2. 不支持Unity ShaderLab， 这部分官方想通过在unity完成绘制，然后传递一张纹理给skia来解决
+3. 增加的包体代码尺寸，但是AAB的技术使得代码尺寸不再是一个问题
 
 # 效果截图
 
@@ -30,19 +30,6 @@
 
 ## TODO:
 
-- demo--->package
-  - 距离可用还有一段距离
-  - 目前能成功运行helloworld.html
-  - 在移植过程中, 对一些细节的理解不够清楚,导致一些样式有误,甚至报错.
-- 扩展层
-  - 自定义资源加载器
-  - 事件回调(点击,抬起,按下...)
-- 功能类型封装,接口定义
-  - 告知外部布局信息(比如方便聊天ListView的布局和ChatMsgItem的布局)
-  - 品质(比如控制gif,序列帧是否进行刷新,在一些低端机上,动图就不需要动了--!)
-  - 设置html模板中的属性.
-  - 提供生命周期函数,便于组件封装.
-- css样式(仅id选择器)
-  - 缓存css样式,避免重复解析
-- html template
-  - 使用html模板, 节省html重复解析的消耗
+- 利用此图文混排的功能完善聊天组件，聊天组件的设计有待完善
+
+  
